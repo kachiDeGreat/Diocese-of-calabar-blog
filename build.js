@@ -67,6 +67,27 @@ const eventsData = [
       "The Diocese rejoices with the newly inaugurated Ascension Archdeaconry. We celebrate the pioneer families, the past leaders who planted and watered, and the present leadership experiencing the harvest. We pray that this new status will spur even greater exploits for the Kingdom of God. To God be the glory!",
     ],
   },
+  {
+    id: 4,
+    slug: "synod-registration-verify-receipt",
+    date: "MAY 20, 2026",
+    title:
+      "IMPORTANT UPDATE: How to Complete Your Synod Registration if You Already Paid",
+    image: "https://i.postimg.cc/Mp0byVLS/Screenshot-2026-06-04-112956.png",
+    category: "Update",
+    content: [
+      "Calvary greetings to you all.",
+      "We have noticed that some delegates successfully paid their registration fee, but their network dropped or their browser tab closed before they could complete the final step to generate their Unique Delegate ID.",
+      'To resolve this, we have added a "Verify Receipt" feature. If you have already been debited and received a Paystack receipt in your email, please DO NOT pay again. Follow these simple steps to claim your payment and complete your registration:',
+      '<strong>Step 1: Return to the Registration Form</strong><br>Go back to the registration page. Good news: If you are using the same phone or computer as before, the system has automatically saved your progress! Your Personal Details will likely be pre-filled for you. If you are using a different device, don\'t worry—simply fill in your details again normally. Just review your info, re-upload your photo if prompted, and click next until you reach the Payment Step.<br><br><img src="https://i.postimg.cc/52m8RvMJ/Whats-App-Image-2026-06-04-at-12-33-29.jpg" alt="Payment step of the form" style="width:100%; border-radius:8px; margin-top:10px;" />',
+      '<strong>Step 2: Click \'Verify Receipt\'</strong><br>Instead of clicking "Proceed to Payment", scroll down to the bottom of that section and click the link that says: <strong>"Already paid but tab closed? Verify Receipt"</strong>.<br><br><img src="https://i.postimg.cc/C1nBSn96/Whats-App-Image-2026-06-04-at-12-34-29.jpg" alt="Highlighting the text link button at the bottom" style="width:100%; border-radius:8px; margin-top:10px;" />',
+      '<strong>Step 3: Enter your Paystack Reference</strong><br>A pop-up box will appear asking for your Reference ID. Go to the email address you used to pay, open your Paystack email receipt, copy the Reference ID, paste it into the box, and click <strong>"Verify Receipt"</strong>.<br><br><img src="https://i.postimg.cc/zBY5HLVw/Whats-App-Image-2026-06-04-at-12-40-26.jpg" alt="Verify Payment pop-up box and input field" style="width:100%; border-radius:8px; margin-top:10px;" />',
+      '<strong>Step 4: Confirm Your Details</strong><br>The system will instantly find your payment and display your <strong>Email, Payment Channel, and the Amount paid.</strong> If the details are correct, click <strong>"Proceed".</strong><br><br><img src="https://i.postimg.cc/MGCZ0PrK/Whats-App-Image-2026-06-04-at-12-36-42.jpg" alt="Transaction Found confirmation box" style="width:100%; border-radius:8px; margin-top:10px;" />',
+      '<strong>Step 5: Complete Your Registration</strong><br>The pop-up will close, and the main payment button will now change to <strong>"Complete Registration" button.</strong> Click it to finalize your submission and instantly generate your Delegate ID!<br><br><img src="https://i.postimg.cc/htJqC8m7/Whats-App-Image-2026-06-04-at-12-37-13-(1).jpg" alt="Green Complete Registration button" style="width:100%; border-radius:8px; margin-top:10px;" />',
+      "If you experience any issues verifying your receipt, please reach out to the admin or technical team with a screenshot of your Paystack email receipt.",
+      "Thank you, and God bless!",
+    ],
+  },
 ];
 const templatePath = path.join(__dirname, "event.html");
 const templateHtml = fs.readFileSync(templatePath, "utf8");
