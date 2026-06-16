@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("news-grid");
   let htmlContent = "";
 
-  eventsData.forEach((event) => {
+  [...eventsData].reverse().forEach((event) => {
     const excerpt = event.content[0].substring(0, 120) + "...";
     htmlContent += `
             <div class="newsCard">

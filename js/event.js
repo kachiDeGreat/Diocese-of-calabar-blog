@@ -44,7 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
 
-  const popularNews = eventsData.filter((e) => e.id !== event.id).slice(0, 3);
+  const popularNews = [...eventsData]
+    .reverse()
+    .filter((e) => e.id !== event.id)
+    .slice(0, 3);
   let sidebarHtml = "";
 
   popularNews.forEach((news) => {
