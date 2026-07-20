@@ -4,7 +4,7 @@ const eventsData = [
     slug: "2026-diocesan-prayer-convocation",
     date: "APRIL 19, 2026",
     title: "2026 Diocesan Prayer Convocation: Enriched By Him In Everything",
-    image: "https://dropimg.onyekachi.dev/uzqgclibqdvtgusovg1b",
+    image: "https://drop-bibbi4ujk-onyekachidegreats-projects.vercel.app/uzqgclibqdvtgusovg1b",
     category: "Convocation",
     content: [
       "From Thursday, April 16th to Sunday, April 19th, 2026, the Anglican Diocese of Calabar gathered at Holy Trinity College, Asari Eso Layout, for a spiritually transformative Diocesan Prayer Convocation. Anchored on the Pauline envisioned theme, 'Enriched by Him in Everything' (1 Cor 1:5), the four-day convocation was a period of deep spiritual renewal, intense prayer, fasting, and profound scriptural learning.",
@@ -31,7 +31,7 @@ const eventsData = [
     date: "APRIL 20, 2026",
     title:
       "Upcoming: Foundation Laying Service for the Diocesan Women Retreat Centre",
-    image: "https://dropimg.onyekachi.dev/qtfltwjrr3pdr3fvcfqv",
+    image: "https://drop-bibbi4ujk-onyekachidegreats-projects.vercel.app/qtfltwjrr3pdr3fvcfqv",
     category: "Upcoming Event",
     content: [
       "The Anglican Diocese of Calabar cordially invites all clergy, lay delegates, parishioners, and well-wishers to a highly anticipated and historic occasion: the Foundation Laying Service of the brand new Diocesan Women Retreat Centre.",
@@ -147,4 +147,116 @@ const eventsData = [
       "<img src='https://i.postimg.cc/MZygRQvV/IMG-20260616-WA0028.jpg' alt='NAWADA Week 8' style='width:100%; max-width:500px; display:block; margin: 0 auto 20px; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);' />",
     ],
   },
+  {
+    id: 7,
+    slug: "nawada-week-23-goals-and-purpose",
+    date: "JUNE 23, 2026",
+    title: "NAWADA Week 23: Children with Goals and Purpose Avoid Destructive Habits",
+    image: "https://i.postimg.cc/76TDmyjF/IMG-20260629-WA0001.jpg",
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 23 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.",
+      "This week, our focus is on empowering our children. The core message is clear: <strong>Children with goals and purpose avoid destructive habits.</strong>",
+      "As parents and guardians, we must guide our children to:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Set Goals:</strong> Help them identify what they want to achieve in the short and long term.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Stay Focused:</strong> Encourage them to keep their eyes on their goals despite distractions.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Build Dreams:</strong> Nurture their ambitions and support their passions.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Live with Purpose:</strong> Instill in them a sense of meaning and direction in life.</li>",
+      "</ul>",
+      "A purposeful child has a brighter future and is far less likely to fall into the trap of drugs and alcohol. Let us say NO to drugs and alcohol.",
+      "<strong>Theme: Empowerment</strong>",
+      "<em>Holy Spirit, Fill our families with Your power. Give our children boldness to say no to drugs and alcohol. Empower us as parents to speak truth with wisdom and compassion. Let Your Spirit guide every decision in our homes. Amen.</em>"
+    ],
+  },
+  {
+    id: 8,
+    slug: "nawada-week-24-monitoring-is-guidance",
+    date: "JUNE 30, 2026",
+    title: "NAWADA Week 24: Monitoring is Guidance, Not Lack of Trust",
+    image: "https://i.postimg.cc/J0V8F2WS/IMG-20260629-WA0000.jpg",
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 24 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.",
+      "This week, we emphasize the importance of parental oversight. Remember: <strong>Monitoring is guidance, not lack of trust.</strong>",
+      "To provide strong guidance and ensure safe children, parents should:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Know Who They Are With:</strong> Be aware of your children's friends and acquaintances.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Know Where They Are Going:</strong> Always know your children's whereabouts.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Talk Openly & Often:</strong> Maintain open lines of communication so they feel comfortable sharing with you.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Guide with Love, Not Fear:</strong> Let your guidance be rooted in love and concern for their well-being, rather than intimidation.</li>",
+      "</ul>",
+      "Strong guidance leads to safe children and bright futures. Let us confidently say NO to drugs and alcohol.",
+      "<strong>Theme: Empowerment</strong>",
+      "<em>Holy Spirit, Fill our families with Your power. Give our children boldness to say no to drugs and alcohol. Empower us as parents to speak truth with wisdom and compassion. Let Your Spirit guide every decision in our homes. Amen.</em>"
+    ],
+  },
+  {
+    id: 9,
+    slug: "nawada-week-25-teach-decision-making",
+    date: "JULY 7, 2026",
+    title: "NAWADA Week 25: Teach Decision-Making - Think, Pray, Choose Wisely",
+    image: "https://i.postimg.cc/7h84RWk8/IMG-20260706-WA0002.jpg",
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 25 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign.",
+      "As we enter the July Trinity Season focusing on Godly Foundations, this week's message is: <strong>Teach decision-making: think, pray, choose wisely.</strong>",
+      "Equipping our children with good decision-making skills is vital for their protection:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Think:</strong> Teach them to evaluate the consequences of their actions before taking them.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Pray:</strong> Encourage them to seek God's guidance in every situation.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Choose Wisely:</strong> Help them make choices that align with godly values and their long-term well-being.</li>",
+      "</ul>",
+      "Let us build strong families and bright futures by saying NO to drugs and alcohol.",
+      "<strong>Theme: Stability & Order</strong>",
+      "<em>Triune God, Establish strong foundations in our families. Let love, accountability, and clear rules guard our children from risky behavior. May our homes reflect unity, order, and spiritual stability. Amen.</em>"
+    ],
+  },
+  {
+    id: 10,
+    slug: "nawada-week-26-address-behavior-issues",
+    date: "JULY 14, 2026",
+    title: "NAWADA Week 26: Address Behavior Issues Early Before They Grow",
+    image: "https://i.postimg.cc/Y0K7PsH7/IMG-20260720-WA0014.jpg",
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 26 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign.",
+      "Continuing our July Trinity Season focus on Godly Foundations, we look at the importance of early intervention: <strong>Address behavior issues early before they grow.</strong>",
+      "Small issues can escalate if left unattended. Parents must:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Notice Early:</strong> Pay close attention to changes in your child's behavior, mood, or habits.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Talk Openly:</strong> Address concerning behaviors immediately through honest, loving conversations.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Guide Consistently:</strong> Apply rules and discipline consistently to reinforce positive behavior.</li>",
+      "</ul>",
+      "Early action builds strong families and bright futures. Stand firm and say NO to drugs and alcohol.",
+      "<strong>Theme: Stability & Order</strong>",
+      "<em>Triune God, Establish strong foundations in our families. Let love, accountability, and clear rules guard our children from risky behavior. May our homes reflect unity, order, and spiritual stability. Amen.</em>"
+    ],
+  },
+  {
+    id: 11,
+    slug: "nawada-week-27-healthy-hobbies-sports",
+    date: "JULY 20, 2026",
+    title: "NAWADA Week 27: Encourage Healthy Hobbies and Sports",
+    image: "https://i.postimg.cc/0QJxcqh6/IMG-20260720-WA0013.jpg",
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 27 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.",
+      "As we focus on Godly Foundations during this Trinity Season, our message for this week is: <strong>Encourage healthy hobbies and sports.</strong>",
+      "Keeping our youth positively engaged is a powerful deterrent against substance abuse. We encourage parents to help their children:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Stay Active:</strong> Physical activity promotes physical and mental well-being.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Discover Talents:</strong> Support them in exploring new skills, arts, and interests.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Build Confidence:</strong> Mastering a hobby or sport significantly boosts self-esteem.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Make Positive Choices:</strong> Time spent on productive activities leaves no room for destructive habits.</li>",
+      "</ul>",
+      "Healthy habits create strong families and bright futures. Let us continue to say NO to drugs and alcohol.",
+      "<strong>Theme: Stability & Order</strong>",
+      "<em>Triune God, Establish strong foundations in our families. Let love, accountability, and clear rules guard our children from risky behavior. May our homes reflect unity, order, and spiritual stability. Amen.</em>"
+    ],
+  }
 ];
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = eventsData;
+}
