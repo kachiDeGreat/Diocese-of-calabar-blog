@@ -254,6 +254,28 @@ const eventsData = [
       "<strong>Theme: Stability & Order</strong>",
       "<em>Triune God, Establish strong foundations in our families. Let love, accountability, and clear rules guard our children from risky behavior. May our homes reflect unity, order, and spiritual stability. Amen.</em>"
     ],
+  },
+  {
+    id: 12,
+    slug: "nawada-week-28-peaceful-homes",
+    date: "JULY 27, 2026",
+    title: "NAWADA Week 28: Peaceful Homes Raise Emotionally Healthy Children",
+    image: "https://i.postimg.cc/LX556BsR/IMG-20260727-WA0031.jpg",
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 28 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.",
+      "As we continue our focus on Godly Foundations during this Trinity Season, our message for this week is: <strong>Peaceful homes raise emotionally healthy children.</strong>",
+      "A peaceful home environment is crucial for a child's emotional development. Parents can foster this by:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Peace at Home:</strong> Create an atmosphere of calm and safety where children feel secure.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Strong Families:</strong> Build strong bonds through love, understanding, and mutual respect.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Emotional Health:</strong> Nurture their emotional well-being by listening and validating their feelings.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Safe Futures:</strong> Provide a stable foundation that guides them away from destructive choices.</li>",
+      "</ul>",
+      "Peaceful homes. Strong children. Bright tomorrows. Let us stand together and say NO to drugs and alcohol.",
+      "<strong>Theme: Stability & Order</strong>",
+      "<em>Triune God, Establish strong foundations in our families. Let love, accountability, and clear rules guard our children from risky behavior. May our homes reflect unity, order, and spiritual stability. Amen.</em>"
+    ],
   }
 ];
 
