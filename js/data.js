@@ -276,6 +276,51 @@ const eventsData = [
       "<strong>Theme: Stability & Order</strong>",
       "<em>Triune God, Establish strong foundations in our families. Let love, accountability, and clear rules guard our children from risky behavior. May our homes reflect unity, order, and spiritual stability. Amen.</em>"
     ],
+  },
+  {
+    id: 13,
+    slug: "nawada-week-29-correct-in-love",
+    date: "AUGUST 3, 2026",
+    title: "NAWADA Week 29: Correct in Love; Avoid Harsh Punishment",
+    image: "https://i.postimg.cc/W4PYBk63/IMG-20260803-WA0032.jpg",
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 29 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.",
+      "As we enter the August Trinity Season focusing on Stewardship of Children, our message for this week is: <strong>Correct in love; avoid harsh punishment.</strong>",
+      "Disciplining children with love and understanding helps build a secure environment. Parents can achieve this by:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Love & Guide:</strong> Correct behavior by guiding them towards the right path with compassion.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Listen Actively:</strong> Pay attention to their thoughts and feelings before reacting.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Communicate Openly:</strong> Maintain an open dialogue to understand the root of their actions.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Protect Them:</strong> Shield them from harmful influences through loving boundaries.</li>",
+      "</ul>",
+      "Faithful parents. Responsible children. Bright futures. Let us stand together and say NO to drugs and alcohol.",
+      "<strong>Theme: Responsibility</strong>",
+      "<em>Lord, Help us to be faithful stewards of the children You have given us. Teach us to listen, communicate openly, and guide them wisely. Protect them from friends and environments that promote substance abuse. Amen.</em>"
+    ],
+  },
+  {
+    id: 14,
+    slug: "nawada-week-31-discuss-mistakes",
+    date: "AUGUST 17, 2026",
+    title: "NAWADA Week 31: Let Children Know Mistakes Can Be Discussed, Not Hidden",
+    image: "https://i.postimg.cc/SKp1BM7b/IMG-20260817-WA0011.jpg",
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 31 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.",
+      "Continuing our focus on Stewardship of Children this August Trinity Season, our message for this week is: <strong>Let children know mistakes can be discussed, not hidden.</strong>",
+      "Fostering an environment where children feel safe to admit their faults is vital. Parents can encourage this by:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Open Conversation:</strong> Create a safe space for them to speak without fear of immediate judgment.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Build Trust:</strong> Ensure they know your love is unconditional, even when they fail.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Listen Actively:</strong> Hear their side of the story and understand their perspective.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Guide Wisely:</strong> Help them learn from their mistakes rather than just penalizing them.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Protect Their Future:</strong> Proper guidance turns mistakes into stepping stones for a brighter future.</li>",
+      "</ul>",
+      "Strong parents. Strong children. Bright futures. Let us stand together and say NO to drugs and alcohol.",
+      "<strong>Theme: Responsibility</strong>",
+      "<em>Lord, Help us to be faithful stewards of the children You have given us. Teach us to listen, communicate openly, and guide them wisely. Protect them from friends and environments that promote substance abuse. Amen.</em>"
+    ],
   }
 ];
 
