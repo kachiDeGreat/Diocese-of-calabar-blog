@@ -321,6 +321,28 @@ const eventsData = [
       "<strong>Theme: Responsibility</strong>",
       "<em>Lord, Help us to be faithful stewards of the children You have given us. Teach us to listen, communicate openly, and guide them wisely. Protect them from friends and environments that promote substance abuse. Amen.</em>"
     ],
+  },
+  {
+    id: 15,
+    slug: "nawada-week-32-spiritual-guidance",
+    date: "AUGUST 24, 2026",
+    title: "NAWADA Week 32: Spiritual Guidance is a Strong Protective Factor",
+    image: "https://i.postimg.cc/26xhd0Cm/IMG-20260824-WA0002.jpg",
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 32 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.",
+      "Continuing our focus on Stewardship of Children this August Trinity Season, our message for this week is: <strong>Spiritual guidance is a strong protective factor.</strong>",
+      "Providing spiritual direction helps fortify our children against worldly temptations. Parents are encouraged to:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Build Faith:</strong> Nurture their spiritual growth and grounding in the word of God.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Listen & Communicate:</strong> Maintain an open dialogue to understand their spiritual questions and challenges.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Guide Wisely:</strong> Direct them towards godly principles and values in their daily choices.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Protect Their Future:</strong> A strong spiritual foundation is the best defense against substance abuse.</li>",
+      "</ul>",
+      "Strong parents. Strong children. Bright futures. Let us stand together and say NO to drugs and alcohol.",
+      "<strong>Theme: Responsibility</strong>",
+      "<em>Lord, Help us to be faithful stewards of the children You have given us. Teach us to listen, communicate openly, and guide them wisely. Protect them from friends and environments that promote substance abuse. Amen.</em>"
+    ],
   }
 ];
 
