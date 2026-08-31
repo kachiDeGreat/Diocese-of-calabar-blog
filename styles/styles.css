@@ -142,8 +142,42 @@ body {
   font-size: 2.5rem;
 }
 
+.categoryFilter {
+  padding: 3rem 0 1rem;
+}
+
+.filterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filter-btn {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover {
+  border-color: #c52810;
+  color: #c52810;
+}
+
+.filter-btn.active {
+  background: #c52810;
+  color: white;
+  border-color: #c52810;
+}
+
 .newsSection {
-  padding: 5rem 0;
+  padding: 2rem 0 5rem;
   flex: 1;
 }
 

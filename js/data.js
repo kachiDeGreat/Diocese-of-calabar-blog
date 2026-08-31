@@ -343,6 +343,28 @@ const eventsData = [
       "<strong>Theme: Responsibility</strong>",
       "<em>Lord, Help us to be faithful stewards of the children You have given us. Teach us to listen, communicate openly, and guide them wisely. Protect them from friends and environments that promote substance abuse. Amen.</em>"
     ],
+  },
+  {
+    id: 16,
+    slug: "nawada-week-33-watch-for-warning-signs",
+    date: "AUGUST 31, 2026",
+    title: "NAWADA Week 33: Watch for Warning Signs: Mood Changes, Secrecy, Withdrawal",
+    image: "https://i.postimg.cc/kMkKtgvB/Whats-App-Image-2026-08-31-at-09-39-35.jpg",
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 33 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.",
+      "As we enter the September Trinity Season focusing on Purpose & Calling, our message for this week is: <strong>Watch for warning signs: mood changes, secrecy, withdrawal.</strong>",
+      "Early detection is key in preventing substance abuse. Parents are encouraged to:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Be Observant:</strong> Pay close attention to your children's behavior and notice any sudden changes.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Talk & Listen:</strong> Maintain an open dialogue to understand what they are going through.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Show You Care:</strong> Reassure them of your unconditional love and support.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Protect Their Future:</strong> Early intervention helps protect them from the dangers of drug and alcohol abuse.</li>",
+      "</ul>",
+      "Strong parents. Strong children. Bright futures. Let us stand together and say NO to drugs and alcohol.",
+      "<strong>Theme: Identity & Direction</strong>",
+      "<em>Father, Reveal Your purpose to our children. When they know who they are in Christ, they will not seek identity in harmful substances. Give them confidence, vision, and godly friendships. Amen.</em>"
+    ],
   }
 ];
 

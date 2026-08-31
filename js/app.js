@@ -1,42 +1,85 @@
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("news-grid");
-  let htmlContent = "";
+  const filterButtonsContainer = document.getElementById("filter-buttons");
 
-  [...eventsData].reverse().forEach((event) => {
-    const excerpt = event.content[0].substring(0, 120) + "...";
-    htmlContent += `
-            <div class="newsCard">
-                <div class="imageContainer">
-                    <img src="${event.image}" alt="${event.title}" class="newsImage lazy-image" loading="lazy" />
-                    <div class="categoryBadge">${event.category}</div>
-                </div>
-                <div class="newsContent">
-                    <div class="dateRow">
-                        <i class="far fa-calendar-alt"></i>
-                        <span>${event.date}</span>
-                    </div>
-                    <h3 class="newsTitle">
-                        <a href="/news/${event.slug}">${event.title}</a>
-                    </h3>
-                    <p class="newsExcerpt">${excerpt}</p>
-                    <a href="/news/${event.slug}" class="readMoreBtn">
-                        Read Article <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        `;
-  });
+  // Get unique categories
+  const categories = ["All", ...new Set(eventsData.map((event) => event.category))];
 
-  grid.innerHTML = htmlContent;
+  // Render filter buttons
+  if (filterButtonsContainer) {
+    let filterHtml = "";
+    categories.forEach(category => {
+      filterHtml += `<button class="filter-btn ${category === 'All' ? 'active' : ''}" data-category="${category}">${category}</button>`;
+    });
+    filterButtonsContainer.innerHTML = filterHtml;
 
-  const images = document.querySelectorAll(".lazy-image");
-  images.forEach((img) => {
-    if (img.complete) {
-      img.classList.add("loaded");
-    } else {
-      img.addEventListener("load", () => {
-        img.classList.add("loaded");
+    // Add event listeners to buttons
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        // Update active class
+        filterBtns.forEach(b => b.classList.remove("active"));
+        e.target.classList.add("active");
+
+        // Filter and render
+        const selectedCategory = e.target.getAttribute("data-category");
+        renderEvents(selectedCategory);
       });
+    });
+  }
+
+  function renderEvents(category = "All") {
+    let htmlContent = "";
+    
+    let filteredEvents = [...eventsData].reverse();
+    if (category !== "All") {
+      filteredEvents = filteredEvents.filter(event => event.category === category);
     }
-  });
+
+    if (filteredEvents.length === 0) {
+      grid.innerHTML = "<div style='grid-column: 1 / -1; text-align: center; color: #777; padding: 2rem 0;'>No events found for this category.</div>";
+      return;
+    }
+
+    filteredEvents.forEach((event) => {
+      const excerpt = event.content[0].substring(0, 120) + "...";
+      htmlContent += `
+              <div class="newsCard">
+                  <div class="imageContainer">
+                      <img src="${event.image}" alt="${event.title}" class="newsImage lazy-image" loading="lazy" />
+                      <div class="categoryBadge">${event.category}</div>
+                  </div>
+                  <div class="newsContent">
+                      <div class="dateRow">
+                          <i class="far fa-calendar-alt"></i>
+                          <span>${event.date}</span>
+                      </div>
+                      <h3 class="newsTitle">
+                          <a href="/news/${event.slug}">${event.title}</a>
+                      </h3>
+                      <p class="newsExcerpt">${excerpt}</p>
+                      <a href="/news/${event.slug}" class="readMoreBtn">
+                          Read Article <i class="fas fa-arrow-right"></i>
+                      </a>
+                  </div>
+              </div>
+          `;
+    });
+
+    grid.innerHTML = htmlContent;
+
+    const images = document.querySelectorAll(".lazy-image");
+    images.forEach((img) => {
+      if (img.complete) {
+        img.classList.add("loaded");
+      } else {
+        img.addEventListener("load", () => {
+          img.classList.add("loaded");
+        });
+      }
+    });
+  }
+
+  // Initial render
+  renderEvents();
 });
