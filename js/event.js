@@ -26,7 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
       paragraphsHtml += `<p>${paragraph}</p>`;
     });
   } else if (typeof event.content === 'string') {
-    paragraphsHtml = event.content;
+    // Convert any non-breaking spaces pasted from Word/PDF into regular spaces
+    // so that browsers can wrap text naturally instead of breaking words in half.
+    paragraphsHtml = event.content.replace(/&nbsp;/g, ' ').replace(/\u00A0/g, ' ');
   }
 
   articleContainer.innerHTML = `
