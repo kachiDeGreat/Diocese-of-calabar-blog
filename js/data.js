@@ -365,6 +365,50 @@ const eventsData = [
       "<strong>Theme: Identity & Direction</strong>",
       "<em>Father, Reveal Your purpose to our children. When they know who they are in Christ, they will not seek identity in harmful substances. Give them confidence, vision, and godly friendships. Amen.</em>"
     ],
+  },
+  {
+    id: 17,
+    slug: "nawada-week-34-community-church-support",
+    date: "SEPTEMBER 7, 2026",
+    title: "NAWADA Week 34: Community and Church Support Strengthen Families",
+    image: "https://i.postimg.cc/52NQDdzR/IMG-20260914-WA0002.jpg", 
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 34 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.",
+      "As we continue our September Trinity Season focusing on Purpose & Calling, our message for this week is: <strong>Community and church support strengthen families.</strong>",
+      "To build families that thrive, we must rely on our community and church:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Church Support:</strong> Engage actively in church activities for spiritual growth.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Stronger Families:</strong> Unity in the family provides a shield against societal vices.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Community Care:</strong> Look out for one another and provide a safe environment for our youth.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Brighter Futures:</strong> Together, we build a foundation for our children to succeed.</li>",
+      "</ul>",
+      "Together, we build families that thrive! Let us stand together and say NO to drugs and alcohol.",
+      "<strong>Theme: Identity & Direction</strong>",
+      "<em>Father, Reveal Your purpose to our children. When they know who they are in Christ, they will not seek identity in harmful substances. Give them confidence, vision, and godly friendships. Amen.</em>"
+    ],
+  },
+  {
+    id: 18,
+    slug: "nawada-week-35-respect-body-temple",
+    date: "SEPTEMBER 14, 2026",
+    title: "NAWADA Week 35: Teach Respect for the Body as God's Temple",
+    image: "https://i.postimg.cc/RZsJBs1j/IMG-20260914-WA0001.jpg", 
+    category: "NAWADA",
+    content: [
+      "Welcome to Week 35 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.",
+      "Continuing our September Trinity Season focus on Purpose & Calling, our message for this week is: <strong>Teach respect for the body as God's temple.</strong>",
+      "As 1 Corinthians 6:19 reminds us: 'Do you not know that your bodies are temples of the Holy Spirit...?' Parents are encouraged to guide their children to:",
+      "<ul>",
+      "<li style='margin-bottom: 10px;'><strong>Healthy Body:</strong> Encourage physical well-being and making healthy choices.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Strong Faith:</strong> Anchor their identity in Christ to resist harmful substances.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Positive Friends:</strong> Foster relationships that uplift and encourage godly living.</li>",
+      "<li style='margin-bottom: 10px;'><strong>Brighter Futures:</strong> Knowing your purpose today ensures a brighter future tomorrow.</li>",
+      "</ul>",
+      "Disciplined today. Purposeful tomorrow. Choose healthy choices and say NO to drugs and alcohol.",
+      "<strong>Theme: Identity & Direction</strong>",
+      "<em>Father, Reveal Your purpose to our children. When they know who they are in Christ, they will not seek identity in harmful substances. Give them confidence, vision, and godly friendships. Amen.</em>"
+    ],
   }
 ];
 
