@@ -347,8 +347,6 @@ body {
   line-height: 1.8;
   margin-bottom: 1.5rem;
   overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
 }
 
 .articleBody * {
