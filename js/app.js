@@ -44,12 +44,17 @@ document.addEventListener("DOMContentLoaded", () => {
     filteredEvents.forEach((event) => {
       let excerptText = "";
       if (Array.isArray(event.content)) {
-        excerptText = event.content[0];
+        excerptText = event.content[0] || "";
       } else if (typeof event.content === 'string') {
-        // Strip HTML tags
-        excerptText = event.content.replace(/<[^>]+>/g, '');
+        // Strip HTML tags with space to avoid merging words, clean up extra spaces
+        excerptText = event.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
       }
-      const excerpt = excerptText.substring(0, 120) + "...";
+      
+      let excerpt = excerptText;
+      if (excerpt.length > 120) {
+        excerpt = excerpt.substring(0, 120);
+        excerpt = excerpt.substring(0, excerpt.lastIndexOf(" ")) + "...";
+      }
       htmlContent += `
               <div class="newsCard">
                   <div class="imageContainer">

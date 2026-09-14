@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/kachiDeGreat/Diocese-of-calabar-blog#readme",
   "dependencies": {
-    "firebase": "^10.8.0"
+    "firebase": "^10.14.1"
   }
 }

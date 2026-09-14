@@ -54,12 +54,17 @@ async function buildSite() {
 
     let excerptText = "";
     if (typeof event.content === 'string') {
-      excerptText = event.content.replace(/<[^>]+>/g, '');
+      // Strip HTML tags with space to avoid merging words, clean up extra spaces
+      excerptText = event.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
     } else if (Array.isArray(event.content)) {
       excerptText = event.content[0] || "";
     }
     
-    const excerpt = excerptText.substring(0, 150) + "...";
+    let excerpt = excerptText;
+    if (excerpt.length > 150) {
+      excerpt = excerpt.substring(0, 150);
+      excerpt = excerpt.substring(0, excerpt.lastIndexOf(" ")) + "...";
+    }
 
     let finalHtml = templateHtml
       .replace(
