@@ -42,7 +42,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     filteredEvents.forEach((event) => {
-      const excerpt = event.content[0].substring(0, 120) + "...";
+      let excerptText = "";
+      if (Array.isArray(event.content)) {
+        excerptText = event.content[0];
+      } else if (typeof event.content === 'string') {
+        // Strip HTML tags
+        excerptText = event.content.replace(/<[^>]+>/g, '');
+      }
+      const excerpt = excerptText.substring(0, 120) + "...";
       htmlContent += `
               <div class="newsCard">
                   <div class="imageContainer">

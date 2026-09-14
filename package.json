@@ -1,0 +1,21 @@
+{
+  "name": "diocese-of-calabar-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kachiDeGreat/Diocese-of-calabar-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kachiDeGreat/Diocese-of-calabar-blog/issues"
+  },
+  "homepage": "https://github.com/kachiDeGreat/Diocese-of-calabar-blog#readme"
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migrate Blogs to Firebase</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 40px; max-width: 800px; margin: 0 auto; background: #f9fafb; color: #111827; }
+    .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+    h1 { margin-top: 0; font-size: 24px; }
+    label { display: block; margin-top: 20px; margin-bottom: 8px; font-weight: 500; }
+    textarea { width: 100%; height: 150px; padding: 12px; border: 1px solid #d1d5db; border-radius: 6px; font-family: monospace; font-size: 14px; box-sizing: border-box; }
+    button { background: #10b981; color: white; border: none; padding: 12px 24px; border-radius: 6px; font-size: 16px; font-weight: 500; cursor: pointer; margin-top: 20px; transition: background 0.2s; }
+    button:hover { background: #059669; }
+    button:disabled { background: #9ca3af; cursor: not-allowed; }
+    #status { margin-top: 20px; font-weight: 500; }
+    .log { font-family: monospace; font-size: 13px; color: #4b5563; margin-top: 5px; }
+    .success { color: #10b981; }
+    .error { color: #ef4444; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Migrate data.js to Firebase</h1>
+    <p>This script will take all the hardcoded blog posts in your `data.js` file, convert the content into rich HTML format (like your React app), and push them to your Firebase Firestore `blogs` collection.</p>
+    
+    <label for="config">Paste your Firebase Config object here:</label>
+    <p style="font-size: 13px; color: #6b7280; margin-top: -5px;">(You can find this in your React app's <code>firebase.ts</code> file. Just paste the object `{ apiKey: "...", ... }`)</p>
+    <textarea id="config" placeholder="{&#10;  apiKey: '...',&#10;  authDomain: '...',&#10;  projectId: '...',&#10;  ...&#10;}"></textarea>
+
+    <button id="migrateBtn">Migrate Data to Firebase</button>
+    <div id="status"></div>
+    <div id="logs"></div>
+  </div>
+
+  <!-- Load the local data.js file -->
+  <script src="./js/data.js"></script>
+
+  <!-- Load Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+    const btn = document.getElementById('migrateBtn');
+    const statusDiv = document.getElementById('status');
+    const logsDiv = document.getElementById('logs');
+
+    function log(msg, type = "normal") {
+      const p = document.createElement('div');
+      p.className = `log ${type}`;
+      p.textContent = msg;
+      logsDiv.appendChild(p);
+    }
+
+    btn.addEventListener('click', async () => {
+      let configObj;
+      try {
+        // Evaluate the string as an object
+        const configStr = document.getElementById('config').value.trim();
+        configObj = (new Function("return " + configStr))();
+        if (!configObj || !configObj.apiKey) throw new Error("Invalid config object");
+      } catch (e) {
+        log("Error parsing config. Please make sure it's a valid Javascript object.", "error");
+        return;
+      }
+
+      btn.disabled = true;
+      statusDiv.innerHTML = "Initializing Firebase...";
+      statusDiv.className = "";
+      logsDiv.innerHTML = "";
+
+      try {
+        const app = initializeApp(configObj);
+        const db = getFirestore(app);
+
+        if (typeof eventsData === 'undefined') {
+          throw new Error("Could not find eventsData. Make sure js/data.js exists.");
+        }
+
+        statusDiv.innerHTML = `Found ${eventsData.length} blogs to migrate. Pushing...`;
+
+        for (const event of eventsData) {
+          // Convert array of content into a single HTML string to match React Quill
+          const htmlContent = event.content.map(p => {
+            if (p.trim().startsWith("<")) return p; // Already HTML
+            return `<p>${p}</p>`; // Wrap plain text in paragraphs
+          }).join("\n");
+
+          const blogData = {
+            title: event.title,
+            category: event.category || "Uncategorized",
+            image: event.image || "",
+            date: event.date,
+            slug: event.slug,
+            content: htmlContent,
+            createdAt: new Date(event.date).toISOString()
+          };
+
+          await addDoc(collection(db, "blogs"), blogData);
+          log(`✅ Migrated: ${event.title}`, "success");
+        }
+
+        statusDiv.innerHTML = "🎉 Migration Complete!";
+        statusDiv.className = "success";
+      } catch (error) {
+        console.error(error);
+        log("Error during migration: " + error.message, "error");
+        statusDiv.innerHTML = "❌ Migration failed.";
+        statusDiv.className = "error";
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

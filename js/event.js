@@ -21,9 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.title = `${event.title} | Diocese of Calabar`;
 
   let paragraphsHtml = "";
-  event.content.forEach((paragraph) => {
-    paragraphsHtml += `<p>${paragraph}</p>`;
-  });
+  if (Array.isArray(event.content)) {
+    event.content.forEach((paragraph) => {
+      paragraphsHtml += `<p>${paragraph}</p>`;
+    });
+  } else if (typeof event.content === 'string') {
+    paragraphsHtml = event.content;
+  }
 
   articleContainer.innerHTML = `
         <div class="articleContainer">
