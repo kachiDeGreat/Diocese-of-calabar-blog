@@ -54,8 +54,17 @@ async function buildSite() {
 
     let excerptText = "";
     if (typeof event.content === 'string') {
-      // Strip HTML tags with space to avoid merging words, clean up extra spaces
-      excerptText = event.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      // Decode common HTML entities, strip tags, and clean up spaces
+      excerptText = event.content
+        .replace(/&nbsp;/g, ' ')
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
     } else if (Array.isArray(event.content)) {
       excerptText = event.content[0] || "";
     }
@@ -63,7 +72,12 @@ async function buildSite() {
     let excerpt = excerptText;
     if (excerpt.length > 150) {
       excerpt = excerpt.substring(0, 150);
-      excerpt = excerpt.substring(0, excerpt.lastIndexOf(" ")) + "...";
+      const lastSpace = excerpt.lastIndexOf(" ");
+      if (lastSpace > 0) {
+        excerpt = excerpt.substring(0, lastSpace) + "...";
+      } else {
+        excerpt = excerpt + "...";
+      }
     }
 
     let finalHtml = templateHtml

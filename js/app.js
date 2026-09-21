@@ -46,14 +46,22 @@ document.addEventListener("DOMContentLoaded", () => {
       if (Array.isArray(event.content)) {
         excerptText = event.content[0] || "";
       } else if (typeof event.content === 'string') {
-        // Strip HTML tags with space to avoid merging words, clean up extra spaces
-        excerptText = event.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+        // Use DOM to safely strip HTML and decode entities (like &nbsp;)
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = event.content;
+        excerptText = tempDiv.textContent || tempDiv.innerText || "";
+        excerptText = excerptText.replace(/\s+/g, ' ').trim();
       }
       
       let excerpt = excerptText;
-      if (excerpt.length > 120) {
-        excerpt = excerpt.substring(0, 120);
-        excerpt = excerpt.substring(0, excerpt.lastIndexOf(" ")) + "...";
+      if (excerpt.length > 150) {
+        excerpt = excerpt.substring(0, 150);
+        const lastSpace = excerpt.lastIndexOf(" ");
+        if (lastSpace > 0) {
+          excerpt = excerpt.substring(0, lastSpace) + "...";
+        } else {
+          excerpt = excerpt + "...";
+        }
       }
       htmlContent += `
               <div class="newsCard">
