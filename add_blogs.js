@@ -17,24 +17,24 @@ const auth = getAuth(app);
 
 const newBlogs = [
   {
-    title: "NAWADA Week 43: Speak Words of Encouragement Daily",
-    slug: "nawada-week-43-speak-words-of-encouragement-daily",
+    title: "NAWADA Week 44: Teach Children to Learn from Failure, Not Escape It",
+    slug: "nawada-week-44-teach-children-to-learn-from-failure-not-escape-it",
     category: "NAWADA",
-    date: "NOVEMBER 2, 2026",
-    createdAt: "2026-11-01T23:00:00.000Z",
-    updatedAt: "2026-11-02T08:00:00.000Z",
-    image: "https://i.postimg.cc/4dd8rn8v/IMG-20261102-WA0010.jpg",
-    content: `<p>Welcome to Week 43 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.</p>
-<p>As we enter the <strong>November season of All Saints &amp; Christ the King</strong>, this week's message reminds every parent and guardian of the life-giving power of our tongues: <strong>Speak words of encouragement daily.</strong></p>
-<p>Words carry immense spiritual and psychological weight. When children grow up hearing affirmation, faith, and love spoken over their lives, their self-worth is anchored in God, shielding them from the deception and peer pressure of substance abuse. Parents and guardians are encouraged to:</p>
+    date: "NOVEMBER 9, 2026",
+    createdAt: "2026-11-08T23:00:00.000Z",
+    updatedAt: "2026-11-09T08:00:00.000Z",
+    image: "https://i.postimg.cc/Bn6kpCx2/IMG-20261112-WA0004.jpg",
+    content: `<p>Welcome to Week 44 of the Nigerian Anglican War Against Drug Abuse (NAWADA) campaign by the Diocese of Calabar.</p>
+<p>As we continue in the <strong>November season of All Saints &amp; Christ the King</strong>, this week's message calls on parents, guardians, and mentors to guide young people through life's challenges with wisdom and grace: <strong>Teach children to learn from failure, not escape it.</strong></p>
+<p>Mistakes and disappointments are an inevitable part of growing up. When children are taught to face setbacks constructively rather than seeking temporary relief in harmful substances, they develop lasting strength of character. Parents and guardians are encouraged to help children:</p>
 <ul>
-<li style='margin-bottom: 10px;'><strong>Build Self-Esteem:</strong> Regularly affirm your children's worth, talents, and unique identity in Christ, letting them know they are deeply loved and valued.</li>
-<li style='margin-bottom: 10px;'><strong>Inspire Good Choices:</strong> Use uplifting words that motivate children to pursue excellence, integrity, and godly character in their daily decisions.</li>
-<li style='margin-bottom: 10px;'><strong>Strengthen Resilience:</strong> When they face setbacks or disappointment, speak hope and confidence into their hearts so they learn to persevere with courage.</li>
-<li style='margin-bottom: 10px;'><strong>Build Stronger Families:</strong> Replace harsh criticism with words of grace, cultivating a peaceful and uplifting atmosphere in the home.</li>
+<li style='margin-bottom: 10px;'><strong>Build Resilience:</strong> Teach children that setbacks are stepping stones, not dead ends, empowering them to bounce back stronger when things do not go as planned.</li>
+<li style='margin-bottom: 10px;'><strong>Learn &amp; Grow:</strong> Guide them to reflect on mistakes with humility and curiosity so every challenge becomes an opportunity for maturity and wisdom.</li>
+<li style='margin-bottom: 10px;'><strong>Stay Focused:</strong> Keep their eyes anchored on godly values, long-term goals, and their purpose in Christ even when they feel discouraged.</li>
+<li style='margin-bottom: 10px;'><strong>Make Better Choices:</strong> Equip them with healthy coping habits and sound judgment so they choose positive solutions over destructive escapes like drug abuse.</li>
 </ul>
-<p>Positive words build stronger children, and stronger children lead to drug-free futures. Let us stand firm together, say NO to drugs, and SAY YES to life!</p>
-<p><strong>Positive words. Stronger children. Drug-free futures.</strong></p>
+<p>Turning setbacks into strength prepares our children for a purposeful, drug-free future. Let us stand firm together, say NO to drugs, and SAY YES to life!</p>
+<p><strong>Turn setbacks into strength. Choose a drug-free life.</strong></p>
 <p><strong>Theme: Holy Living</strong></p>
 <p><em>King of Glory, Help our children live as saints in a challenging world. May they choose holiness over harmful habits. Let Christ reign in our homes and rule over every decision we make. Amen.</em></p>`
   }
